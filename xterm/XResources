@@ -1,0 +1,4 @@
+xterm*background: black
+xterm*foreground: green
+XTerm.vt100.scrollBar: false
+
