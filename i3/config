@@ -120,11 +120,14 @@ bindsym $mod+0 workspace $ws10
 # Audio keys
 bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume @DEFAULT_SINK@ +1000"
 bindsym XF86AudioLowerVolume exec "pactl set-sink-volume @DEFAULT_SINK@ -1000"
-bindsym XF86AudioMute exec "pactl set-sink-nvolume @DEFAULT_SINK@ toggle"
+bindsym XF86AudioMute exec "pactl set-sink-mute @DEFAULT_SINK@ toggle"
 
 #Brightness keys
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
+
+#Some programs i use
+bindsym $mod+b exec "firefox"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
